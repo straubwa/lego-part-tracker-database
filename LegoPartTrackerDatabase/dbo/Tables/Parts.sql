@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[Parts] (
     [Id]             INT            NOT NULL,
-    [Color]          NVARCHAR (100) NOT NULL,
+    [Color]          NVARCHAR (100) NULL,
     [ElementId]      NVARCHAR (100) NULL,
     [Name]           NVARCHAR (400) NOT NULL,
-    [PartImageUrl]   NVARCHAR (400) NOT NULL,
+    [PartImageUrl]   NVARCHAR (400) NULL,
     [PartNumber]     NVARCHAR (100) NOT NULL,
     [PartUrl]        NVARCHAR (400) NULL,
     [QuantityFound]  INT            NOT NULL,
