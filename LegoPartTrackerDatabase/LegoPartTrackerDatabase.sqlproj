@@ -65,6 +65,7 @@
   <ItemGroup>
     <Build Include="dbo\Tables\Sets.sql" />
     <Build Include="dbo\Tables\Parts.sql" />
+    <Build Include="dbo\SetDetails.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LegoPartTrackerDatabase.publish.xml" />
