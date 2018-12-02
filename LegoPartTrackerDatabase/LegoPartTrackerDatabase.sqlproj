@@ -68,5 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="LegoPartTrackerDatabase.publish.xml" />
+    <None Include="LegoPartTrackerDatabase.azure.publish.xml" />
   </ItemGroup>
 </Project>
