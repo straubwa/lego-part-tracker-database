@@ -9,6 +9,7 @@
     [QuantityFound]  INT            NOT NULL,
     [QuantityNeeded] INT            NOT NULL,
     [SetNumber]      NVARCHAR (100) NULL,
+    [QuantityFoundDateChanged] DATETIME NULL , 
     CONSTRAINT [PK_Parts] PRIMARY KEY CLUSTERED ([Id] ASC),
     CONSTRAINT [FK_Parts_Sets_SetNumber] FOREIGN KEY ([SetNumber]) REFERENCES [dbo].[Sets] ([SetNumber])
 );
