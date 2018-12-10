@@ -11,8 +11,9 @@ SELECT p.Id
 ,	p.QuantityNeeded
 ,	p.SetNumber
 ,	p.QuantityFoundDateChanged
-,	c.Name 'Category'
-,	cg.Name 'CategoryGroup'
+,	c.Name 'CategoryName'
+,	g.Name 'GroupName'
 from [Part] p
 left join [Category] c on p.CategoryId = c.Id
-left join [CategoryGroup] cg on c.CategoryGroupId = cg.Id
+left join [PartGroup] pg on p.PartNumber = pg.PartNumber
+left join [Group] g on pg.GroupId = g.Id
