@@ -20,4 +20,7 @@
 GO
 CREATE NONCLUSTERED INDEX [IX_Parts_SetNumber]
     ON [dbo].[Part]([SetNumber] ASC);
+GO
 
+CREATE NONCLUSTERED INDEX [IX_Parts_PartNumber]
+    ON [dbo].[Part]([PartNumber] ASC);
