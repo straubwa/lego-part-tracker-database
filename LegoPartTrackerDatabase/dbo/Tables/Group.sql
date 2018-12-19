@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Group]
 (
-	[Id] INT NOT NULL , 
+	[Id] INT NOT NULL IDENTITY , 
     [Name] VARCHAR(400) NOT NULL,
     CONSTRAINT [PK_Group] PRIMARY KEY CLUSTERED ([Id] ASC)
 )
