@@ -2,6 +2,7 @@
 select p.PartNumber 
 ,   p.Name
 ,   min(p.PartImageUrl) 'PartImageUrl'
+,   sum(p.QuantityNeeded) 'PartCount'
 ,   p.CategoryId
 ,   c.Name 'CategoryName'
 ,	g.Id 'GroupId'
