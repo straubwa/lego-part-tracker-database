@@ -27,10 +27,12 @@ USING (VALUES
  ,(14,N'Snot')
  ,(15,N'Socket')
  ,(16,N'Technic')
- ,(17,N'Wehicle')
+ ,(17,N'Vehicle')
  ,(18,N'Wall')
  ,(19,N'Wedge')
  ,(20,N'Minifig')
+ ,(21,N'Unassociated')
+ ,(22,N'Ignore')
 ) AS Source ([Id],[Name])
 ON (Target.[Id] = Source.[Id])
 WHEN MATCHED AND (
