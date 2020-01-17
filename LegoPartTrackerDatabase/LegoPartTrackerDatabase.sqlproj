@@ -75,6 +75,8 @@
     <Build Include="dbo\Views\PartGroupDetail.sql" />
     <PostDeploy Include="scripts\Script.PostDeployment.sql" />
     <None Include="scripts\PopulateGroup.sql" />
+    <Build Include="dbo\Tables\SubGroup.sql" />
+    <Build Include="dbo\Tables\PartSubGroup.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LegoPartTrackerDatabase.publish.xml" />
