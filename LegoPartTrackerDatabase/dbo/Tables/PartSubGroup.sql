@@ -1,8 +1,8 @@
-﻿CREATE TABLE [dbo].[PartSubGroup]
+﻿CREATE TABLE [dbo].[PartSubgroup]
 (
     [PartNumber]	VARCHAR (100) NOT NULL,
-	[SubGroupId]		INT NOT NULL,
+	[SubgroupId]		INT NOT NULL,
     [CreatedDate] DATETIME NOT NULL, 
-    CONSTRAINT [PK_PartSubGroup] PRIMARY KEY CLUSTERED ([PartNumber] ASC),
-    CONSTRAINT [FK_PartSubGroup_SubGroup_SubGroupId] FOREIGN KEY ([SubGroupId]) REFERENCES [dbo].[SubGroup] ([Id])
+    CONSTRAINT [PK_PartSubgroup] PRIMARY KEY CLUSTERED ([PartNumber] ASC),
+    CONSTRAINT [FK_PartSubgroup_Subgroup_SubgroupId] FOREIGN KEY ([SubgroupId]) REFERENCES [dbo].[Subgroup] ([Id])
 )
